@@ -1,0 +1,753 @@
+{
+ "_說明": "官網字串表。每個 key 有 zh-Hant／zh-Hans／en／ja。zh-Hans 若留空，build_pages.py 會用 zhconv 從 zh-Hant 自動轉出並寫回。改完跑：python3 website/tools/build_pages.py",
+ "meta.title": {
+  "zh-Hant": "漢末萬人敵：黃巾篇｜官方網站",
+  "en": "Ten Thousand Foes: Yellow Turban Rebellion — Official Site",
+  "ja": "漢末万人敵 ―黄巾の乱―｜公式サイト",
+  "zh-Hans": "汉末万人敌：黄巾篇｜官方网站"
+ },
+ "meta.desc": {
+  "zh-Hant": "操控關羽、趙雲，一人迎戰千軍萬馬。紮寨佈陣、抽卡升級武技，一路殺到張角城，撐過三十波黃巾大軍。像素三國動作生存遊戲。",
+  "en": "Lead Guan Yu or Zhao Yun against a sea of Yellow Turbans. Pitch camps, draft upgrade cards and survive 30 waves all the way to Zhang Jiao's fortress. A pixel-art Three Kingdoms action survival game.",
+  "ja": "関羽・趙雲を操り、一騎で千軍万馬に立ち向かえ。陣を張り、カードで武技を鍛え、張角の城まで三十波を生き延びる。ドット絵三国志アクションサバイバル。",
+  "zh-Hans": "操控关羽、赵云，一人迎战千军万马。扎寨布阵、抽卡升级武技，一路杀到张角城，撑过三十波黄巾大军。像素三国动作生存游戏。"
+ },
+ "game.name": {
+  "zh-Hant": "漢末萬人敵",
+  "en": "Ten Thousand Foes",
+  "ja": "漢末万人敵",
+  "zh-Hans": "汉末万人敌"
+ },
+ "game.chapter": {
+  "zh-Hant": "黃巾篇",
+  "en": "Yellow Turban Rebellion",
+  "ja": "黄巾の乱",
+  "zh-Hans": "黄巾篇"
+ },
+ "nav.features": {
+  "zh-Hant": "特色",
+  "en": "Features",
+  "ja": "特徴",
+  "zh-Hans": "特色"
+ },
+ "nav.heroes": {
+  "zh-Hant": "英雄",
+  "en": "Heroes",
+  "ja": "英雄",
+  "zh-Hans": "英雄"
+ },
+ "nav.units": {
+  "zh-Hant": "兵種",
+  "en": "Enemies",
+  "ja": "敵軍",
+  "zh-Hans": "兵种"
+ },
+ "nav.camps": {
+  "zh-Hant": "營寨寶物",
+  "en": "Camps",
+  "ja": "陣と宝物",
+  "zh-Hans": "营寨宝物"
+ },
+ "nav.gallery": {
+  "zh-Hant": "畫面",
+  "en": "Gallery",
+  "ja": "ギャラリー",
+  "zh-Hans": "画面"
+ },
+ "nav.community": {
+  "zh-Hant": "社群",
+  "en": "Community",
+  "ja": "コミュニティ",
+  "zh-Hans": "社群"
+ },
+ "nav.manual": {
+  "zh-Hant": "說明書",
+  "en": "Manual",
+  "ja": "説明書",
+  "zh-Hans": "说明书"
+ },
+ "nav.support": {
+  "zh-Hant": "支援",
+  "en": "Support",
+  "ja": "サポート",
+  "zh-Hans": "支援"
+ },
+ "nav.home": {
+  "zh-Hant": "首頁",
+  "en": "Home",
+  "ja": "トップ",
+  "zh-Hans": "首页"
+ },
+ "nav.menu": {
+  "zh-Hant": "選單",
+  "en": "Menu",
+  "ja": "メニュー",
+  "zh-Hans": "选单"
+ },
+ "nav.lang": {
+  "zh-Hant": "語言",
+  "en": "Language",
+  "ja": "言語",
+  "zh-Hans": "语言"
+ },
+ "hero.kicker": {
+  "zh-Hant": "三國像素・動作生存",
+  "en": "Pixel-art Three Kingdoms action survival",
+  "ja": "ドット絵三国志・アクションサバイバル",
+  "zh-Hans": "三国像素・动作生存"
+ },
+ "hero.tagline": {
+  "zh-Hant": "黃巾作亂，天下大亂！操控關羽、趙雲，沿路紮下營寨、抽卡升級武技，一路殺到張角城，撐過三十波黃巾大軍。",
+  "en": "The Yellow Turbans have risen! Lead Guan Yu or Zhao Yun, pitch camps, draft upgrade cards and survive 30 waves all the way to Zhang Jiao's fortress.",
+  "ja": "黄巾賊が蜂起し、天下は大いに乱れた！関羽・趙雲を操り、行く先々に陣を張り、カードで武技を鍛え、張角の城まで三十波の黄巾大軍を生き延びよ。",
+  "zh-Hans": "黄巾作乱，天下大乱！操控关羽、赵云，沿路扎下营寨、抽卡升级武技，一路杀到张角城，撑过三十波黄巾大军。"
+ },
+ "hero.meta": {
+  "zh-Hant": "單人・離線・買斷制・無廣告",
+  "en": "Single-player · Offline · One-time purchase · No ads",
+  "ja": "シングルプレイ・オフライン・買い切り・広告なし",
+  "zh-Hans": "单人・离线・买断制・无广告"
+ },
+ "btn.discord": {
+  "zh-Hant": "加入 Discord",
+  "en": "Join our Discord",
+  "ja": "Discord に参加",
+  "zh-Hans": "加入 Discord"
+ },
+ "btn.platforms": {
+  "zh-Hant": "平台：即將推出",
+  "en": "Platforms: Coming Soon",
+  "ja": "対応機種：近日発売",
+  "zh-Hans": "平台：即将推出"
+ },
+ "btn.trailer": {
+  "zh-Hant": "觀看開場影片",
+  "en": "Watch the intro",
+  "ja": "オープニング映像を見る",
+  "zh-Hans": "观看开场影片"
+ },
+ "btn.manual": {
+  "zh-Hant": "閱讀遊戲說明書",
+  "en": "Read the game manual",
+  "ja": "ゲーム説明書を読む",
+  "zh-Hans": "阅读游戏说明书"
+ },
+ "btn.email": {
+  "zh-Hant": "寄信給我們",
+  "en": "Email us",
+  "ja": "メールを送る",
+  "zh-Hans": "寄信给我们"
+ },
+ "btn.close": {
+  "zh-Hant": "關閉",
+  "en": "Close",
+  "ja": "閉じる",
+  "zh-Hans": "关闭"
+ },
+ "quote.text": {
+  "zh-Hant": "蒼天已死，黃天當立；歲在甲子，天下大吉。",
+  "en": "The Blue Heaven is dead; the Yellow Heaven shall rise. In the year of Jiazi, great fortune comes to all under heaven.",
+  "ja": "蒼天已に死す、黄天当に立つべし。歳は甲子に在り、天下大吉。",
+  "zh-Hans": "苍天已死，黄天当立；岁在甲子，天下大吉。"
+ },
+ "quote.src": {
+  "zh-Hant": "—— 太平道・張角",
+  "en": "— Zhang Jiao, the Way of Great Peace",
+  "ja": "―― 太平道・張角",
+  "zh-Hans": "—— 太平道・张角"
+ },
+ "feat.eyebrow": {
+  "zh-Hant": "遊戲特色",
+  "en": "Features",
+  "ja": "ゲームの特徴",
+  "zh-Hans": "游戏特色"
+ },
+ "feat.title": {
+  "zh-Hant": "一人之力，抵擋千軍",
+  "en": "One hero against ten thousand",
+  "ja": "ただ一騎、千軍を阻む",
+  "zh-Hans": "一人之力，抵挡千军"
+ },
+ "feat.1.t": {
+  "zh-Hant": "一騎當千",
+  "en": "A Match for a Thousand",
+  "ja": "一騎当千",
+  "zh-Hans": "一骑当千"
+ },
+ "feat.1.d": {
+  "zh-Hant": "英雄自動揮刀迎敵，你只要決定往哪裡走、在哪裡紮營。鍵盤、手把、觸控都能單手上陣。",
+  "en": "Your hero attacks on his own — you decide where to move and where to make camp. Play with keyboard, controller or touch, even one-handed.",
+  "ja": "英雄は自動で敵を斬る。あなたが決めるのは、どこへ動き、どこに陣を張るかだけ。キーボード・ゲームパッド・タッチ対応。",
+  "zh-Hans": "英雄自动挥刀迎敌，你只要决定往哪里走、在哪里扎营。键盘、手把、触控都能单手上阵。"
+ },
+ "feat.2.t": {
+  "zh-Hant": "紮寨佈陣",
+  "en": "Pitch Your Camps",
+  "ja": "陣を張る",
+  "zh-Hans": "扎寨布阵"
+ },
+ "feat.2.d": {
+  "zh-Hant": "步兵營、騎兵營、弓箭營各有戰法；背靠巨石、林邊設伏、空曠平原，地形決定營寨強弱。",
+  "en": "Infantry, cavalry and archer camps each fight their own way — and boulders, treelines and open ground change how strong they are.",
+  "ja": "歩兵営・騎兵営・弓兵営それぞれに戦法あり。巨石を背に、林縁の伏兵、開けた平原――地形が陣の強さを変える。",
+  "zh-Hans": "步兵营、骑兵营、弓箭营各有战法；背靠巨石、林边设伏、空旷平原，地形决定营寨强弱。"
+ },
+ "feat.3.t": {
+  "zh-Hant": "抽卡成長",
+  "en": "Draft Your Build",
+  "ja": "カードで成長",
+  "zh-Hans": "抽卡成长"
+ },
+ "feat.3.d": {
+  "zh-Hant": "每次升級三選一：武技、營寨、兵書、神兵、名馬。每一局的組合都不一樣。",
+  "en": "Every level-up, pick one of three: martial skills, camps, war manuals, divine weapons, famed steeds. No two runs are alike.",
+  "ja": "レベルアップごとに三択：武技・陣・兵書・神兵・名馬。毎回ちがう組み合わせに。",
+  "zh-Hans": "每次升级三选一：武技、营寨、兵书、神兵、名马。每一局的组合都不一样。"
+ },
+ "feat.4.t": {
+  "zh-Hant": "三十波，再加死鬥",
+  "en": "30 Waves — Then Endless",
+  "ja": "三十波、そして死闘へ",
+  "zh-Hans": "三十波，再加死斗"
+ },
+ "feat.4.d": {
+  "zh-Hant": "五大渠帥輪番壓陣，撐過三十波即可通關；還不過癮，就踏入無盡的死鬥模式。",
+  "en": "Five Yellow Turban chieftains stand in your way. Survive 30 waves to win — then step into the endless Death Match.",
+  "ja": "黄巾の五大渠帥が立ちはだかる。三十波を生き延びればクリア、物足りなければ果てなき死闘モードへ。",
+  "zh-Hans": "五大渠帅轮番压阵，撑过三十波即可通关；还不过瘾，就踏入无尽的死斗模式。"
+ },
+ "heroes.eyebrow": {
+  "zh-Hant": "英雄",
+  "en": "Heroes",
+  "ja": "英雄",
+  "zh-Hans": "英雄"
+ },
+ "heroes.title": {
+  "zh-Hant": "萬軍之中，取上將首級",
+  "en": "Through ten thousand ranks",
+  "ja": "万軍の中、上将の首を取る",
+  "zh-Hans": "万军之中，取上将首级"
+ },
+ "gy.name": {
+  "zh-Hant": "關羽",
+  "en": "Guan Yu",
+  "ja": "関羽",
+  "zh-Hans": "关羽"
+ },
+ "gy.epithet": {
+  "zh-Hant": "美髯公・字雲長",
+  "en": "Lord of the Beautiful Beard",
+  "ja": "美髯公・字は雲長",
+  "zh-Hans": "美髯公・字云长"
+ },
+ "gy.desc": {
+  "zh-Hant": "手提八十二斤青龍偃月刀，刀法大開大合，一揮便是扇形橫掃。蒼龍噴火、旋刀化圓、水淹七軍——以一人之勇鎮住整片戰場。",
+  "en": "Wielding the 82-catty Green Dragon Crescent Blade, every swing is a sweeping arc. Dragon fire, whirlwind blades and a flood that drowns seven armies — one man's valor holds the whole field.",
+  "ja": "八十二斤の青龍偃月刀を手に、一振りで扇状に薙ぎ払う。蒼龍の炎、旋回する刀、七軍を呑む大水――ひとりの武勇で戦場を制す。",
+  "zh-Hans": "手提八十二斤青龙偃月刀，刀法大开大合，一挥便是扇形横扫。苍龙喷火、旋刀化圆、水淹七军——以一人之勇镇住整片战场。"
+ },
+ "zy.name": {
+  "zh-Hant": "趙雲",
+  "en": "Zhao Yun",
+  "ja": "趙雲",
+  "zh-Hans": "赵云"
+ },
+ "zy.epithet": {
+  "zh-Hant": "常山趙子龍",
+  "en": "Zhao Zilong of Changshan",
+  "ja": "常山の趙子龍",
+  "zh-Hans": "常山赵子龙"
+ },
+ "zy.desc": {
+  "zh-Hant": "白袍銀甲、亮銀長槍，一擊便是上中下三段連環快刺。七進七出的白馬、烈焰火鳳，以及異界戰神「召喚者・紫龍」的跨界助陣。",
+  "en": "White robe, silver armor and a gleaming spear that strikes high, mid and low in a single breath. A white steed, fiery phoenixes — and help from an otherworldly war god, the Purple Dragon Summoner.",
+  "ja": "白袍銀甲、亮銀の長槍で上中下三段の連続突き。七進七出の白馬、烈火の鳳凰、そして異界の戦神「召喚者・紫龍」の加勢。",
+  "zh-Hans": "白袍银甲、亮银长枪，一击便是上中下三段连环快刺。七进七出的白马、烈焰火凤，以及异界战神“召唤者・紫龙”的跨界助阵。"
+ },
+ "heroes.skills": {
+  "zh-Hant": "蓋世武技",
+  "en": "Martial skills",
+  "ja": "武技",
+  "zh-Hans": "盖世武技"
+ },
+ "heroes.innate": {
+  "zh-Hant": "天生絕技",
+  "en": "Innate",
+  "ja": "天賦",
+  "zh-Hans": "天生绝技"
+ },
+ "units.eyebrow": {
+  "zh-Hant": "兵種與渠帥",
+  "en": "Enemies & Chieftains",
+  "ja": "敵兵と渠帥",
+  "zh-Hans": "兵种与渠帅"
+ },
+ "units.title": {
+  "zh-Hant": "黃巾百萬，波波不同",
+  "en": "A million Yellow Turbans, every wave different",
+  "ja": "黄巾百万、波ごとに新たな敵",
+  "zh-Hans": "黄巾百万，波波不同"
+ },
+ "units.lead": {
+  "zh-Hant": "從荒野骷髏、脅從流民，到紅甲、銀甲、金甲的精銳刀盾、神弓手、鐵騎，每一波都會湧現新的強敵。看懂牠們的出手預警，才能活到最後。",
+  "en": "From skeletons and conscripted refugees to red-, silver- and gold-armored elite swordsmen, archers and cavalry, every wave brings a new threat. Learn their warning tells to survive.",
+  "ja": "荒野の骸骨兵、駆り出された流民から、赤甲・銀甲・金甲の精鋭刀兵・弓兵・鉄騎まで、波ごとに新たな強敵が現れる。攻撃の予兆を見切って生き延びよ。",
+  "zh-Hans": "从荒野骷髅、胁从流民，到红甲、银甲、金甲的精锐刀盾、神弓手、铁骑，每一波都会涌现新的强敌。看懂它们的出手预警，才能活到最后。"
+ },
+ "units.mobs": {
+  "zh-Hant": "黃巾兵",
+  "en": "Yellow Turban Troops",
+  "ja": "黄巾兵",
+  "zh-Hans": "黄巾兵"
+ },
+ "units.bosses": {
+  "zh-Hant": "黃巾渠帥",
+  "en": "Yellow Turban Chieftains",
+  "ja": "黄巾の渠帥",
+  "zh-Hans": "黄巾渠帅"
+ },
+ "units.trait": {
+  "zh-Hant": "特性",
+  "en": "Traits",
+  "ja": "特徴",
+  "zh-Hans": "特性"
+ },
+ "units.counter": {
+  "zh-Hant": "應對",
+  "en": "How to deal",
+  "ja": "対処法",
+  "zh-Hans": "应对"
+ },
+ "units.skills": {
+  "zh-Hant": "招式",
+  "en": "Moves",
+  "ja": "技",
+  "zh-Hans": "招式"
+ },
+ "units.wave": {
+  "zh-Hant": "第 {n} 波",
+  "en": "Wave {n}",
+  "ja": "第{n}波",
+  "zh-Hans": "第 {n} 波"
+ },
+ "units.final": {
+  "zh-Hant": "最終",
+  "en": "Final",
+  "ja": "最終",
+  "zh-Hans": "最终"
+ },
+ "units.hidden": {
+  "zh-Hant": "隱藏渠帥",
+  "en": "Hidden chieftain",
+  "ja": "隠し渠帥",
+  "zh-Hans": "隐藏渠帅"
+ },
+ "units.fire": {
+  "zh-Hant": "怕火",
+  "en": "Weak to fire",
+  "ja": "火に弱い",
+  "zh-Hans": "怕火"
+ },
+ "units.superarmor": {
+  "zh-Hant": "霸體",
+  "en": "Unflinching",
+  "ja": "スーパーアーマー",
+  "zh-Hans": "霸体"
+ },
+ "units.ranged": {
+  "zh-Hant": "遠程",
+  "en": "Ranged",
+  "ja": "遠距離",
+  "zh-Hans": "远程"
+ },
+ "units.bossrule": {
+  "zh-Hant": "渠帥皆有「護體罡氣」：武技、營寨與寶物每秒能削的血量有限，唯有英雄親手的普攻能一刀一刀破其根本。",
+  "en": "Every chieftain is shielded by a Warding Aura: skills, camps and treasures can only chip away so much per second. Only your hero's own basic attacks break through.",
+  "ja": "渠帥はみな「護体の罡気」をまとう。武技・陣・宝物で削れる体力は毎秒わずか。英雄自らの通常攻撃だけが、その根本を破る。",
+  "zh-Hans": "渠帅皆有“护体罡气”：武技、营寨与宝物每秒能削的血量有限，唯有英雄亲手的普攻能一刀一刀破其根本。"
+ },
+ "units.firenote": {
+  "zh-Hant": "銀甲、金甲與盔甲兵屬盔甲系，火屬性招式傷害 +30%。",
+  "en": "Silver, gold and armored troops are armor types — fire attacks deal +30% damage to them.",
+  "ja": "銀甲・金甲・甲冑兵は甲冑系。火属性の技で与ダメージ +30%。",
+  "zh-Hans": "银甲、金甲与盔甲兵属盔甲系，火属性招式伤害 +30%。"
+ },
+ "camps.eyebrow": {
+  "zh-Hant": "營寨與寶物",
+  "en": "Camps & Treasures",
+  "ja": "陣と宝物",
+  "zh-Hans": "营寨与宝物"
+ },
+ "camps.title": {
+  "zh-Hant": "安營紮寨，奇珍助陣",
+  "en": "Make camp, gather treasures",
+  "ja": "陣を張り、奇珍を集めよ",
+  "zh-Hans": "安营扎寨，奇珍助阵"
+ },
+ "camp.inf.d": {
+  "zh-Hant": "刀盾步兵分批衝出營外迎擊，防禦最為堅實。絕技「步步為營」大批刀兵四面推進。",
+  "en": "Sword-and-shield infantry sally out in waves — the sturdiest camp. Its signature Steady Advance sends masses of soldiers pushing outward.",
+  "ja": "刀盾の歩兵が次々に打って出る、最も堅固な陣。絶技「堅陣の進軍」で大軍が四方へ押し出す。",
+  "zh-Hans": "刀盾步兵分批冲出营外迎击，防御最为坚实。绝技“步步为营”大批刀兵四面推进。"
+ },
+ "camp.cav.d": {
+  "zh-Hant": "鐵騎策馬直線衝殺，專破密集之敵。絕技「視死如歸」結成楔形陣狂飆突進，激勵全軍。",
+  "en": "Cavalry charge straight through packed enemies. Its signature Death Charge forms wedges that tear across the field and rally your whole army.",
+  "ja": "鉄騎が一直線に突撃し、密集した敵を崩す。絶技「決死突撃」は楔形陣で駆け抜け、全軍を鼓舞する。",
+  "zh-Hans": "铁骑策马直线冲杀，专破密集之敌。绝技“视死如归”结成楔形阵狂飙突进，激励全军。"
+ },
+ "camp.arc.d": {
+  "zh-Hant": "神射手不斷拋射追蹤箭雨。絕技「箭如雨下」火箭天降，化作一片火海，對盔甲敵軍尤具奇效。",
+  "en": "Marksmen rain homing arrows on anything in range. Its signature Rain of Arrows turns the ground into a sea of fire — deadly against armored foes.",
+  "ja": "神射手が追尾する矢を降らせ続ける。絶技「矢の雨」は火矢で一面を火の海に変え、甲冑の敵に特に有効。",
+  "zh-Hans": "神射手不断抛射追踪箭雨。绝技“箭如雨下”火箭天降，化作一片火海，对盔甲敌军尤具奇效。"
+ },
+ "camps.dove": {
+  "zh-Hant": "營寨絕技蓄滿時會放出信鴿飛向你——接到牠就發動大招；三營齊備時更能自動發動「三軍聯擊」。",
+  "en": "When a camp's signature move is ready, it releases a messenger dove — catch it to unleash the attack. With all three camps on the field, they launch a Three-Army Strike on their own.",
+  "ja": "陣の絶技がたまると伝書鳩が飛んでくる。受け取れば大技発動。三陣がそろえば「三軍連撃」が自動で発動する。",
+  "zh-Hans": "营寨绝技蓄满时会放出信鸽飞向你——接到它就发动大招；三营齐备时更能自动发动“三军联击”。"
+ },
+ "tr.1.t": {
+  "zh-Hant": "錦囊妙計",
+  "en": "Stratagems",
+  "ja": "錦嚢の計",
+  "zh-Hans": "锦囊妙计"
+ },
+ "tr.1.d": {
+  "zh-Hant": "橫掃千軍、金鐘罩、鐵索連環、驅虎吞狼……隨智力與武力移山倒海。",
+  "en": "Sweep a Thousand Armies, Golden Bell Armor, Chain of Iron, Tiger Drives Wolf — scaling with your Intelligence and Might.",
+  "ja": "横掃千軍・金鐘罩・鉄鎖連環・駆虎呑狼……知力と武力で山をも動かす。",
+  "zh-Hans": "横扫千军、金钟罩、铁索连环、驱虎吞狼……随智力与武力移山倒海。"
+ },
+ "tr.2.t": {
+  "zh-Hant": "隨身刀槍",
+  "en": "Divine Weapons",
+  "ja": "携行の刀槍",
+  "zh-Hans": "随身刀枪"
+ },
+ "tr.2.d": {
+  "zh-Hant": "青釭劍、倚天劍、屠龍刀……化作靈兵懸浮身側，協同作戰。",
+  "en": "The Qinggang Sword, Heaven-Reliant Sword, Dragon-Slaying Saber… spirit blades that hover at your side.",
+  "ja": "青釭の剣・倚天の剣・屠龍刀……霊兵となって傍らに浮かび、共に戦う。",
+  "zh-Hans": "青釭剑、倚天剑、屠龙刀……化作灵兵悬浮身侧，协同作战。"
+ },
+ "tr.3.t": {
+  "zh-Hant": "傳世神兵",
+  "en": "Heirloom Treasures",
+  "ja": "伝世の神兵",
+  "zh-Hans": "传世神兵"
+ },
+ "tr.3.d": {
+  "zh-Hant": "方天畫戟、羽扇、諸葛連弩、傳國玉璽、的盧——整局永久生效。",
+  "en": "Sky Piercer Halberd, Feather Fan, Zhuge Repeating Crossbow, Imperial Jade Seal, Dilu — they last the whole run.",
+  "ja": "方天画戟・羽扇・諸葛連弩・伝国の玉璽・的盧――その局のあいだ永続する。",
+  "zh-Hans": "方天画戟、羽扇、诸葛连弩、传国玉玺、的卢——整局永久生效。"
+ },
+ "tr.4.t": {
+  "zh-Hant": "天下名馬",
+  "en": "Famed Steeds",
+  "ja": "天下の名馬",
+  "zh-Hans": "天下名马"
+ },
+ "tr.4.d": {
+  "zh-Hant": "赤兔、汗血、爪黃飛電、照夜玉獅子……翻身上馬，縱橫沙場。",
+  "en": "Red Hare, the Blood-Sweat Steed, Flying Lightning, the Night-Shining Jade Lion… mount up and ride.",
+  "ja": "赤兎馬・汗血馬・爪黄飛電・照夜玉獅子……馬に跨り戦場を駆けよ。",
+  "zh-Hans": "赤兔、汗血、爪黄飞电、照夜玉狮子……翻身上马，纵横沙场。"
+ },
+ "tr.5.t": {
+  "zh-Hant": "兵家秘典",
+  "en": "War Manuals",
+  "ja": "兵家の秘典",
+  "zh-Hans": "兵家秘典"
+ },
+ "tr.5.d": {
+  "zh-Hant": "春秋、孫子兵法、孟德新書、降龍十八掌……永久提升智力與戰力。",
+  "en": "Spring and Autumn Annals, Art of War, Mengde's New Book, the Eighteen Dragon-Subduing Palms… permanent boosts.",
+  "ja": "春秋・孫子兵法・孟徳新書・降龍十八掌……知力と戦力を永久に高める。",
+  "zh-Hans": "春秋、孙子兵法、孟德新书、降龙十八掌……永久提升智力与战力。"
+ },
+ "tr.6.t": {
+  "zh-Hant": "古廟參拜",
+  "en": "The Ancient Temple",
+  "ja": "古廟参拝",
+  "zh-Hans": "古庙参拜"
+ },
+ "tr.6.d": {
+  "zh-Hant": "斬殺渠帥後古廟現世：佛前擲筊、招兵買馬、選購寶物、修繕廟宇累積福佑。",
+  "en": "After each chieftain falls, a temple appears: cast divination blocks, recruit troops, buy treasures and restore the temple for blessings.",
+  "ja": "渠帥を討つと古廟が現れる。おみくじ、募兵、宝物の購入、廟の修繕で加護を積もう。",
+  "zh-Hans": "斩杀渠帅后古庙现世：佛前掷筊、招兵买马、选购宝物、修缮庙宇累积福佑。"
+ },
+ "gallery.eyebrow": {
+  "zh-Hant": "遊戲畫面",
+  "en": "Gallery",
+  "ja": "ゲーム画面",
+  "zh-Hans": "游戏画面"
+ },
+ "gallery.title": {
+  "zh-Hant": "烽火連天的三國沙場",
+  "en": "A battlefield ablaze",
+  "ja": "戦火の三国の地",
+  "zh-Hans": "烽火连天的三国沙场"
+ },
+ "shot.horde": {
+  "zh-Hant": "一人迎戰千軍萬馬——見龍在野，青龍竄向八方",
+  "en": "One against a thousand — Dragon in the Field sends dragons in every direction",
+  "ja": "一騎で千軍万馬に挑む――見龍在野、青龍が八方へ",
+  "zh-Hans": "一人迎战千军万马——见龙在野，青龙窜向八方"
+ },
+ "shot.zhangjiao": {
+  "zh-Hant": "大戰張角：天雷大陣、三分身、符咒定身",
+  "en": "Zhang Jiao's Heavenly Thunder Array: three clones and binding talismans",
+  "ja": "張角の天雷大陣：三人の分身と呪符の縛",
+  "zh-Hans": "大战张角：天雷大阵、三分身、符咒定身"
+ },
+ "shot.endless": {
+  "zh-Hant": "死鬥無盡，渠帥再臨",
+  "en": "Endless Death Match — the chieftains return",
+  "ja": "果てなき死闘、渠帥ふたたび",
+  "zh-Hans": "死斗无尽，渠帅再临"
+ },
+ "shot.temple": {
+  "zh-Hant": "入廟擲筊，神明賜寶",
+  "en": "Enter the temple, seek the gods' blessing",
+  "ja": "廟に入り、神仏の加護を",
+  "zh-Hans": "入庙掷筊，神明赐宝"
+ },
+ "shot.cards": {
+  "zh-Hant": "升級抽卡：武技越練越強",
+  "en": "Level-up cards: skills grow stronger",
+  "ja": "レベルアップのカード：武技を鍛える",
+  "zh-Hans": "升级抽卡：武技越练越强"
+ },
+ "shot.shop": {
+  "zh-Hant": "廟宇商店：神兵寶物任你挑",
+  "en": "Temple shop: pick your divine weapons",
+  "ja": "廟の商店：神兵・宝物を選ぶ",
+  "zh-Hans": "庙宇商店：神兵宝物任你挑"
+ },
+ "video.title": {
+  "zh-Hant": "開場影片",
+  "en": "Intro",
+  "ja": "オープニング",
+  "zh-Hans": "开场影片"
+ },
+ "comm.eyebrow": {
+  "zh-Hant": "社群",
+  "en": "Community",
+  "ja": "コミュニティ",
+  "zh-Hans": "社群"
+ },
+ "comm.title": {
+  "zh-Hant": "與天下主公共商破賊之策",
+  "en": "Plan the campaign with fellow lords",
+  "ja": "天下の主公と破賊の策を語ろう",
+  "zh-Hans": "与天下主公共商破贼之策"
+ },
+ "comm.desc": {
+  "zh-Hant": "在 Discord 交流戰術與配裝、分享精彩戰績、回報問題，並第一時間得知上市消息。",
+  "en": "Trade tactics and builds, show off your best runs, report bugs and be the first to hear about the launch — on Discord.",
+  "ja": "Discord で戦術や構成を語り合い、戦績を共有し、不具合を報告し、発売情報をいち早く受け取ろう。",
+  "zh-Hans": "在 Discord 交流战术与配装、分享精彩战绩、回报问题，并第一时间得知上市消息。"
+ },
+ "comm.fb.t": {
+  "zh-Hant": "意見回饋",
+  "en": "Feedback",
+  "ja": "ご意見・ご感想",
+  "zh-Hans": "意见回馈"
+ },
+ "comm.fb.d": {
+  "zh-Hant": "有建議、發現 bug，或只是想說聲加油？歡迎來信。",
+  "en": "Suggestions, bug reports or just a word of encouragement? We'd love to hear from you.",
+  "ja": "ご提案、不具合の報告、応援のひとことも大歓迎です。",
+  "zh-Hans": "有建议、发现 bug，或只是想说声加油？欢迎来信。"
+ },
+ "plat.eyebrow": {
+  "zh-Hant": "平台與售價",
+  "en": "Platforms & Price",
+  "ja": "対応機種と価格",
+  "zh-Hans": "平台与售价"
+ },
+ "plat.title": {
+  "zh-Hant": "即將推出",
+  "en": "Coming soon",
+  "ja": "近日発売",
+  "zh-Hans": "即将推出"
+ },
+ "plat.price": {
+  "zh-Hant": "售價 US$4.99・買斷制",
+  "en": "US$4.99 · one-time purchase",
+  "ja": "US$4.99・買い切り",
+  "zh-Hans": "售价 US$4.99・买断制"
+ },
+ "plat.soon": {
+  "zh-Hant": "即將推出",
+  "en": "Coming soon",
+  "ja": "近日発売",
+  "zh-Hans": "即将推出"
+ },
+ "plat.get": {
+  "zh-Hant": "前往商店",
+  "en": "Get it",
+  "ja": "ストアへ",
+  "zh-Hans": "前往商店"
+ },
+ "plat.steam": {
+  "zh-Hant": "Windows・Mac",
+  "en": "Windows · Mac",
+  "ja": "Windows・Mac",
+  "zh-Hans": "Windows・Mac"
+ },
+ "plat.ios": {
+  "zh-Hant": "iPhone・iPad",
+  "en": "iPhone · iPad",
+  "ja": "iPhone・iPad",
+  "zh-Hans": "iPhone・iPad"
+ },
+ "plat.mac": {
+  "zh-Hant": "Mac",
+  "en": "Mac",
+  "ja": "Mac",
+  "zh-Hans": "Mac"
+ },
+ "plat.gplay": {
+  "zh-Hant": "Android",
+  "en": "Android",
+  "ja": "Android",
+  "zh-Hans": "Android"
+ },
+ "plat.f1": {
+  "zh-Hant": "單人・完全離線",
+  "en": "Single-player, fully offline",
+  "ja": "シングルプレイ・完全オフライン",
+  "zh-Hans": "单人・完全离线"
+ },
+ "plat.f2": {
+  "zh-Hant": "無廣告・無內購",
+  "en": "No ads, no in-app purchases",
+  "ja": "広告なし・課金なし",
+  "zh-Hans": "无广告・无内购"
+ },
+ "plat.f3": {
+  "zh-Hant": "不蒐集任何個人資料",
+  "en": "Collects no personal data",
+  "ja": "個人情報を一切収集しません",
+  "zh-Hans": "不搜集任何个人资料"
+ },
+ "plat.f4": {
+  "zh-Hant": "繁中・简中・English・日本語",
+  "en": "繁中 · 简中 · English · 日本語",
+  "ja": "繁中・简中・English・日本語",
+  "zh-Hans": "繁中・简中・English・日本语"
+ },
+ "plat.f5": {
+  "zh-Hant": "支援手把、鍵盤與觸控",
+  "en": "Controller, keyboard and touch",
+  "ja": "ゲームパッド・キーボード・タッチ対応",
+  "zh-Hans": "支援手把、键盘与触控"
+ },
+ "plat.f6": {
+  "zh-Hant": "輕鬆・認真・地獄 三種難度",
+  "en": "Easy, Normal and Hell difficulties",
+  "ja": "簡単・普通・地獄の三難易度",
+  "zh-Hans": "轻松・认真・地狱 三种难度"
+ },
+ "footer.privacy": {
+  "zh-Hant": "隱私權政策",
+  "en": "Privacy Policy",
+  "ja": "プライバシーポリシー",
+  "zh-Hans": "隐私权政策"
+ },
+ "footer.support": {
+  "zh-Hant": "支援與常見問題",
+  "en": "Support & FAQ",
+  "ja": "サポート・よくある質問",
+  "zh-Hans": "支援与常见问题"
+ },
+ "footer.manual": {
+  "zh-Hant": "遊戲說明書",
+  "en": "Game Manual",
+  "ja": "ゲーム説明書",
+  "zh-Hans": "游戏说明书"
+ },
+ "footer.contact": {
+  "zh-Hant": "聯絡",
+  "en": "Contact",
+  "ja": "お問い合わせ",
+  "zh-Hans": "联络"
+ },
+ "footer.rights": {
+  "zh-Hant": "保留所有權利。",
+  "en": "All rights reserved.",
+  "ja": "All rights reserved.",
+  "zh-Hans": "保留所有权利。"
+ },
+ "footer.credits": {
+  "zh-Hant": "致謝：部分音效 Powered by Stability AI・部分動畫使用 MiniMax H3・字型 霞鶩文楷、Klee One、Cinzel（SIL Open Font License）",
+  "en": "Credits: some sound effects Powered by Stability AI · some animation made with MiniMax H3 · fonts LXGW WenKai, Klee One, Cinzel (SIL Open Font License)",
+  "ja": "クレジット：一部効果音 Powered by Stability AI・一部アニメーションに MiniMax H3 を使用・フォント 霞鶩文楷、Klee One、Cinzel（SIL Open Font License）",
+  "zh-Hans": "致谢：部分音效 Powered by Stability AI・部分动画使用 MiniMax H3・字型 霞鹜文楷、Klee One、Cinzel（SIL Open Font License）"
+ },
+ "footer.nothird": {
+  "zh-Hant": "本網站不使用 Cookie 與任何追蹤分析。",
+  "en": "This site uses no cookies and no tracking.",
+  "ja": "本サイトは Cookie やアクセス解析を使用していません。",
+  "zh-Hans": "本网站不使用 Cookie 与任何追踪分析。"
+ },
+ "manual.title": {
+  "zh-Hant": "遊戲說明書",
+  "en": "Game Manual",
+  "ja": "ゲーム説明書",
+  "zh-Hans": "游戏说明书"
+ },
+ "manual.toc": {
+  "zh-Hant": "目錄",
+  "en": "Contents",
+  "ja": "目次",
+  "zh-Hans": "目录"
+ },
+ "manual.top": {
+  "zh-Hant": "回到頂端",
+  "en": "Back to top",
+  "ja": "ページの先頭へ",
+  "zh-Hans": "回到顶端"
+ },
+ "support.title": {
+  "zh-Hant": "支援與常見問題",
+  "en": "Support & FAQ",
+  "ja": "サポート・よくある質問",
+  "zh-Hans": "支援与常见问题"
+ },
+ "privacy.title": {
+  "zh-Hant": "隱私權政策",
+  "en": "Privacy Policy",
+  "ja": "プライバシーポリシー",
+  "zh-Hans": "隐私权政策"
+ },
+ "camp.inf": {
+  "zh-Hant": "步兵營",
+  "en": "Infantry Camp",
+  "ja": "歩兵営",
+  "zh-Hans": "步兵营"
+ },
+ "camp.cav": {
+  "zh-Hant": "騎兵營",
+  "en": "Cavalry Camp",
+  "ja": "騎兵営",
+  "zh-Hans": "骑兵营"
+ },
+ "camp.arc": {
+  "zh-Hant": "弓箭營",
+  "en": "Archer Camp",
+  "ja": "弓兵営",
+  "zh-Hans": "弓箭营"
+ },
+ "footer.site": {
+  "zh-Hant": "網站",
+  "en": "Site",
+  "ja": "サイト",
+  "zh-Hans": "网站"
+ }
+}

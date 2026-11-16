@@ -1,0 +1,599 @@
+{
+ "_說明": "兵種、渠帥、英雄武技資料。sprites＝assets/sprites/ 下的動畫條 id；名稱取自遊戲 i18n/strings.json；特性與應對整理自 docs/怪物總覽.md 與遊戲說明書。zh-Hans 留空會自動轉。",
+ "mobs": [
+  {
+   "id": "skeleton",
+   "sprites": [
+    "skeleton"
+   ],
+   "tags": [],
+   "name": {
+    "zh-Hant": "骷髏",
+    "en": "Skeleton",
+    "ja": "骸骨兵",
+    "zh-Hans": "骷髅"
+   },
+   "trait": {
+    "zh-Hant": "妖道作法引來的荒野白骨，持長矛直刺，是開場最常見的雜兵。",
+    "en": "Bones raised by sorcery from the wilds, thrusting with spears — the first foes you meet.",
+    "ja": "妖術で荒野から呼び起こされた白骨。長槍で突いてくる、序盤の雑兵。",
+    "zh-Hans": "妖道作法引来的荒野白骨，持长矛直刺，是开场最常见的杂兵。"
+   },
+   "counter": {
+    "zh-Hant": "一刀一個，放心往前砍。",
+    "en": "One hit each — just cut your way through.",
+    "ja": "一太刀で倒せる。どんどん斬り進もう。",
+    "zh-Hans": "一刀一个，放心往前砍。"
+   }
+  },
+  {
+   "id": "refugee",
+   "sprites": [
+    "refugee"
+   ],
+   "tags": [],
+   "name": {
+    "zh-Hant": "流民",
+    "en": "Refugee",
+    "ja": "流民",
+    "zh-Hans": "流民"
+   },
+   "trait": {
+    "zh-Hant": "被黃巾裹挾的百姓，走得慢、人數多，是一片人海。",
+    "en": "Commoners swept up by the rebellion — slow, but they come in crowds.",
+    "ja": "黄巾に駆り出された民。足は遅いが、数で押し寄せる人の海。",
+    "zh-Hans": "被黄巾裹挟的百姓，走得慢、人数多，是一片人海。"
+   },
+   "counter": {
+    "zh-Hant": "邊走邊砍，別讓人海堵住去路。",
+    "en": "Keep moving as you cut, and don't get boxed in.",
+    "ja": "動きながら斬り、人の海に道を塞がれないように。",
+    "zh-Hans": "边走边砍，别让人海堵住去路。"
+   }
+  },
+  {
+   "id": "swordsman",
+   "sprites": [
+    "swordsman",
+    "swordsman_red",
+    "swordsman_silver",
+    "swordsman_gold"
+   ],
+   "tags": [],
+   "name": {
+    "zh-Hant": "刀兵（黃巾・紅甲・銀甲・金甲）",
+    "en": "Swordsmen (Turban · Red · Silver · Gold)",
+    "ja": "刀兵（黄巾・赤甲・銀甲・金甲）",
+    "zh-Hans": "刀兵（黄巾・红甲・银甲・金甲）"
+   },
+   "trait": {
+    "zh-Hant": "黃巾刀兵跑得快、貼身就砍；紅甲重劈、銀甲全面升級、金甲霸體重劈，越到後期越硬。",
+    "en": "Turban swordsmen are fast and hack on contact; red ones cleave hard, silver are upgraded all round, and gold elites can't be staggered.",
+    "ja": "黄巾刀兵は足が速く、近づけば斬りかかる。赤甲は重い一撃、銀甲は全面強化、金甲は怯まぬ重撃。",
+    "zh-Hans": "黄巾刀兵跑得快、贴身就砍；红甲重劈、银甲全面升级、金甲霸体重劈，越到后期越硬。"
+   },
+   "counter": {
+    "zh-Hant": "出手前有舉刀預備動作，看準空檔再進；銀甲、金甲怕火。",
+    "en": "Watch for the wind-up before each swing; silver and gold are weak to fire.",
+    "ja": "振りかぶりの予備動作を見てから踏み込もう。銀甲・金甲は火に弱い。",
+    "zh-Hans": "出手前有举刀预备动作，看准空档再进；银甲、金甲怕火。"
+   }
+  },
+  {
+   "id": "archer",
+   "sprites": [
+    "archer_red",
+    "archer_silver",
+    "archer_gold"
+   ],
+   "tags": [
+    "ranged"
+   ],
+   "name": {
+    "zh-Hant": "弓手（紅甲・銀甲・金甲）",
+    "en": "Archers (Red · Silver · Gold)",
+    "ja": "弓兵（赤甲・銀甲・金甲）",
+    "zh-Hans": "弓手（红甲・银甲・金甲）"
+   },
+   "trait": {
+    "zh-Hant": "進入射程才停下拉弓，箭沿拋物線落在地上的藍圈；金甲弓手射程最遠、箭幾乎平射。",
+    "en": "They stop to draw once in range and lob arrows onto a blue circle on the ground. Gold archers shoot farthest and almost flat.",
+    "ja": "射程に入ると足を止めて弓を引き、矢は地面の青い円に落ちる。金甲弓兵は射程最長、矢はほぼ水平に飛ぶ。",
+    "zh-Hans": "进入射程才停下拉弓，箭沿抛物线落在地上的蓝圈；金甲弓手射程最远、箭几乎平射。"
+   },
+   "counter": {
+    "zh-Hant": "腳下出現藍圈就移開；弓手血薄，衝過去收掉。",
+    "en": "Step out of the blue circle; archers are fragile, so rush them down.",
+    "ja": "足元に青い円が出たら移動。弓兵は打たれ弱いので一気に詰めよう。",
+    "zh-Hans": "脚下出现蓝圈就移开；弓手血薄，冲过去收掉。"
+   }
+  },
+  {
+   "id": "cavalry",
+   "sprites": [
+    "cavalry_silver",
+    "cavalry_gold"
+   ],
+   "tags": [
+    "armor",
+    "fire"
+   ],
+   "name": {
+    "zh-Hant": "騎兵（銀甲・金甲）",
+    "en": "Cavalry (Silver · Gold)",
+    "ja": "騎兵（銀甲・金甲）",
+    "zh-Hans": "骑兵（银甲・金甲）"
+   },
+   "trait": {
+    "zh-Hant": "霸體、移動最快。站定蓄力後直線衝鋒，金甲騎兵是後期最兇的衝鋒手。",
+    "en": "Unflinching and the fastest on the field. They brace, then charge in a straight line — gold cavalry hit hardest.",
+    "ja": "怯まず、最も速い。踏みとどまって力をため、一直線に突撃する。金甲騎兵は終盤最凶。",
+    "zh-Hans": "霸体、移动最快。站定蓄力后直线冲锋，金甲骑兵是后期最凶的冲锋手。"
+   },
+   "counter": {
+    "zh-Hant": "地上出現淡紅痕就橫移讓開——衝鋒路線是固定的。",
+    "en": "When a faint red streak appears, sidestep — the charge path is fixed.",
+    "ja": "地面に淡い赤い筋が出たら横へよける。突撃の進路は固定だ。",
+    "zh-Hans": "地上出现淡红痕就横移让开——冲锋路线是固定的。"
+   }
+  },
+  {
+   "id": "shield",
+   "sprites": [
+    "shield"
+   ],
+   "tags": [
+    "armor"
+   ],
+   "name": {
+    "zh-Hant": "盾牌兵",
+    "en": "Shieldbearer",
+    "ja": "盾兵",
+    "zh-Hans": "盾牌兵"
+   },
+   "trait": {
+    "zh-Hant": "扛著大盾的肉牆：血厚、防禦高、霸體打不斷，走得慢。",
+    "en": "A walking wall behind a great shield — tough, well-defended and unflinching, but slow.",
+    "ja": "大盾を担ぐ肉の壁。体力も防御も高く、怯まないが足は遅い。",
+    "zh-Hans": "扛着大盾的肉墙：血厚、防御高、霸体打不断，走得慢。"
+   },
+   "counter": {
+    "zh-Hant": "先清掉周圍雜兵，再集中火力慢慢磨。",
+    "en": "Clear the crowd around it first, then grind it down.",
+    "ja": "まず周りの雑兵を片付け、それから集中して削ろう。",
+    "zh-Hans": "先清掉周围杂兵，再集中火力慢慢磨。"
+   }
+  },
+  {
+   "id": "chain",
+   "sprites": [
+    "chain"
+   ],
+   "tags": [
+    "ranged"
+   ],
+   "name": {
+    "zh-Hant": "鎖鏈兵",
+    "en": "Chain Soldier",
+    "ja": "鉄鎖兵",
+    "zh-Hans": "锁链兵"
+   },
+   "trait": {
+    "zh-Hant": "遠遠站定，甩出鐵鏈砸地；出手前有紅線與落點紅圈預警。",
+    "en": "Stands back and hurls an iron chain at the ground, telegraphed by a red line and target circle.",
+    "ja": "距離をとって立ち止まり、鉄鎖を地面に叩きつける。赤い線と着弾の赤い円が予兆。",
+    "zh-Hans": "远远站定，甩出铁链砸地；出手前有红线与落点红圈预警。"
+   },
+   "counter": {
+    "zh-Hant": "落點在出手時就鎖定，別站著不動，移動即可躲開。",
+    "en": "The target locks when it throws — keep moving and it misses.",
+    "ja": "着弾点は投げた瞬間に固定。動いていれば当たらない。",
+    "zh-Hans": "落点在出手时就锁定，别站着不动，移动即可躲开。"
+   }
+  },
+  {
+   "id": "armored",
+   "sprites": [
+    "armored"
+   ],
+   "tags": [
+    "armor",
+    "fire"
+   ],
+   "name": {
+    "zh-Hant": "盔甲兵",
+    "en": "Armored Soldier",
+    "ja": "甲冑兵",
+    "zh-Hans": "盔甲兵"
+   },
+   "trait": {
+    "zh-Hant": "重甲大刀兵，走得最慢，但 160° 大橫掃一掃一大片。",
+    "en": "Heavy armor and a huge blade — the slowest foe, but its 160° sweep clears a wide arc.",
+    "ja": "重甲に大刀。最も鈍重だが、160°の大薙ぎ払いは広範囲を襲う。",
+    "zh-Hans": "重甲大刀兵，走得最慢，但 160° 大横扫一扫一大片。"
+   },
+   "counter": {
+    "zh-Hant": "用火打！火屬性招式（例如飛龍在天、弓箭營火海）傷害 +30%。",
+    "en": "Burn it! Fire attacks (like Dragon Soaring in the Sky or the archer camp's fire) deal +30%.",
+    "ja": "火で攻めよ！飛龍在天や弓兵営の火の海など火属性の技でダメージ +30%。",
+    "zh-Hans": "用火打！火属性招式（例如飞龙在天、弓箭营火海）伤害 +30%。"
+   }
+  },
+  {
+   "id": "sorcerer",
+   "sprites": [
+    "sorcerer"
+   ],
+   "tags": [
+    "ranged"
+   ],
+   "name": {
+    "zh-Hant": "巫師",
+    "en": "Sorcerer",
+    "ja": "妖術師",
+    "zh-Hans": "巫师"
+   },
+   "trait": {
+    "zh-Hant": "在遠處唸咒，你腳下的橘圈越縮越小；被鎖定就會緩速、暈眩，武技冷卻全部重來。",
+    "en": "Chants from afar while an orange ring shrinks around you. If it locks on, you're slowed, stunned and all skill cooldowns reset.",
+    "ja": "遠くで呪文を唱え、足元の橙の円が縮んでいく。捕まれば鈍足・気絶、武技の調息もすべてやり直し。",
+    "zh-Hans": "在远处念咒，你脚下的橘圈越缩越小；被锁定就会缓速、晕眩，武技冷却全部重来。"
+   },
+   "counter": {
+    "zh-Hant": "被橘圈套住就一定要動，圈縮到最小前離開原地。",
+    "en": "If the orange ring appears, move — get out before it closes.",
+    "ja": "橙の円に囲まれたら必ず動く。縮みきる前にその場を離れよう。",
+    "zh-Hans": "被橘圈套住就一定要动，圈缩到最小前离开原地。"
+   }
+  }
+ ],
+ "bosses": [
+  {
+   "id": "deng_mao",
+   "wave": 5,
+   "scale": 1,
+   "name": {
+    "zh-Hant": "鄧茂",
+    "en": "Deng Mao",
+    "ja": "鄧茂",
+    "zh-Hans": "邓茂"
+   },
+   "moves": {
+    "zh-Hant": "貓爪爪擊・長臂",
+    "en": "Claw Swipe · Long Arm",
+    "ja": "猫爪・長腕",
+    "zh-Hans": "猫爪爪击・长臂"
+   },
+   "trait": {
+    "zh-Hant": "唯一會近身追人的渠帥。舉爪揮出扇形爪擊，還會從肩膀伸出長臂直刺。",
+    "en": "The only chieftain who chases you into melee. Swipes with a fan of claws and shoots out a long arm from his shoulder.",
+    "ja": "唯一、間合いを詰めて追ってくる渠帥。扇状の爪で引き裂き、肩から長腕を伸ばして突く。",
+    "zh-Hans": "唯一会近身追人的渠帅。举爪挥出扇形爪击，还会从肩膀伸出长臂直刺。"
+   },
+   "counter": {
+    "zh-Hant": "長臂出手前地上有紅色長條，橫向走出即可；放完長臂是安心輸出的空檔。",
+    "en": "A red strip on the ground warns of the long arm — step sideways out of it. Afterwards is your window to attack.",
+    "ja": "長腕の前には地面に赤い帯。横に抜ければよい。放った後は安心して攻める好機。",
+    "zh-Hans": "长臂出手前地上有红色长条，横向走出即可；放完长臂是安心输出的空档。"
+   }
+  },
+  {
+   "id": "gao_sheng",
+   "wave": 10,
+   "scale": 1,
+   "name": {
+    "zh-Hant": "高升",
+    "en": "Gao Sheng",
+    "ja": "高昇",
+    "zh-Hans": "高升"
+   },
+   "moves": {
+    "zh-Hant": "鐵拳・步步高升",
+    "en": "Iron Fist · Ever Higher",
+    "ja": "鉄拳・歩歩高昇",
+    "zh-Hans": "铁拳・步步高升"
+   },
+   "trait": {
+    "zh-Hant": "從遠處發射不會轉彎的鐵拳；蹲下蓄力後「步步高升」，一次向四面八方射出六把鋼飛刀。",
+    "en": "Fires iron fists that never turn. Then he crouches, rises — \"Ever Higher!\" — and flings six steel knives in every direction.",
+    "ja": "曲がらない鉄拳を遠くから放つ。しゃがんで力をため「歩歩高昇」、四方八方へ六本の鋼の飛刀を放つ。",
+    "zh-Hans": "从远处发射不会转弯的铁拳；蹲下蓄力后“步步高升”，一次向四面八方射出六把钢飞刀。"
+   },
+   "counter": {
+    "zh-Hant": "鐵拳鎖定後橫移一步；蓄力時站到兩把飛刀之間。",
+    "en": "Sidestep once the fist locks on; during the crouch, stand between two knife paths.",
+    "ja": "鉄拳は狙いが固まったら一歩横へ。ため中は飛刀と飛刀のあいだに立とう。",
+    "zh-Hans": "铁拳锁定后横移一步；蓄力时站到两把飞刀之间。"
+   }
+  },
+  {
+   "id": "zhang_liang",
+   "wave": 15,
+   "scale": 1,
+   "name": {
+    "zh-Hant": "張梁",
+    "en": "Zhang Liang",
+    "ja": "張梁",
+    "zh-Hans": "张梁"
+   },
+   "moves": {
+    "zh-Hant": "刀氣・毒龍斬",
+    "en": "Blade Aura · Poison Dragon Slash",
+    "ja": "刀気・毒龍斬",
+    "zh-Hans": "刀气・毒龙斩"
+   },
+   "trait": {
+    "zh-Hant": "人公將軍。舉刀劈出飛很遠的直線刀氣；大喝「毒龍斬！」後旋轉著高速衝過整條路線。",
+    "en": "General of Man. Hurls long-range blade waves, then bellows \"Poison Dragon Slash!\" and spins across the field at speed.",
+    "ja": "人公将軍。遠くまで飛ぶ直線の刀気を放ち、「毒龍斬！」の叫びとともに回転しながら一直線に突進する。",
+    "zh-Hans": "人公将军。举刀劈出飞很远的直线刀气；大喝“毒龙斩！”后旋转着高速冲过整条路线。"
+   },
+   "counter": {
+    "zh-Hant": "看到紅色衝刺路線立刻往垂直方向跑；衝到終點收招是反擊空檔。",
+    "en": "When the red path appears, run perpendicular to it. Punish him while he recovers at the end.",
+    "ja": "赤い突進路が見えたら直角方向へ逃げる。終点での硬直が反撃の好機。",
+    "zh-Hans": "看到红色冲刺路线立刻往垂直方向跑；冲到终点收招是反击空档。"
+   }
+  },
+  {
+   "id": "zhang_bao",
+   "wave": 20,
+   "scale": 1,
+   "name": {
+    "zh-Hant": "張寶",
+    "en": "Zhang Bao",
+    "ja": "張宝",
+    "zh-Hans": "张宝"
+   },
+   "moves": {
+    "zh-Hant": "人為財死・狐妖魅鬼",
+    "en": "Dying for Gold · Fox Spirit Charm",
+    "ja": "人為財死・狐妖魅鬼",
+    "zh-Hans": "人为财死・狐妖魅鬼"
+   },
+   "trait": {
+    "zh-Hant": "地公將軍。葫蘆噴錢、把小兵吸入化作幽靈骷髏；再放出舞姬、樂姬纏身，讓你步履遲緩、武技調息倍慢。",
+    "en": "General of Earth. Sprays coins from his gourd, sucks in his own troops and spits them out as ghosts — then sends a dancer and a musician to bewitch you.",
+    "ja": "地公将軍。瓢箪から銭を噴き、雑兵を吸い込んで幽霊骸骨に変える。さらに舞姫・楽姫を放ち、主公にまとわりつかせる。",
+    "zh-Hans": "地公将军。葫芦喷钱、把小兵吸入化作幽灵骷髅；再放出舞姬、乐姬缠身，让你步履迟缓、武技调息倍慢。"
+   },
+   "counter": {
+    "zh-Hant": "追上張寶，用普攻連砍破咒；幽靈打不死，只能閃。",
+    "en": "Chase him down and break the charm with basic attacks. The ghosts can't be killed — dodge them.",
+    "ja": "張宝に追いつき、通常攻撃で呪を破れ。幽霊は倒せないので避けるしかない。",
+    "zh-Hans": "追上张宝，用普攻连砍破咒；幽灵打不死，只能闪。"
+   }
+  },
+  {
+   "id": "zhang_jiao",
+   "wave": 25,
+   "final": true,
+   "scale": 1,
+   "name": {
+    "zh-Hant": "張角",
+    "en": "Zhang Jiao",
+    "ja": "張角",
+    "zh-Hans": "张角"
+   },
+   "moves": {
+    "zh-Hant": "符咒護身・撒符・天雷大陣",
+    "en": "Talisman Ward · Talisman Toss · Heavenly Thunder Array",
+    "ja": "呪符護身・呪符撒き・天雷大陣",
+    "zh-Hans": "符咒护身・撒符・天雷大阵"
+   },
+   "trait": {
+    "zh-Hant": "天公將軍、太平道主。符咒護身削弱普攻，被符咒打中就定在原地；「天雷大陣」龍捲、落雷、三分身齊出，最後一聲「落」，天雷劈下。",
+    "en": "General of Heaven, master of the Way of Great Peace. Talismans blunt your blows and bind you in place; his Heavenly Thunder Array brings tornadoes, lightning, three clones — and one final \"Fall!\"",
+    "ja": "天公将軍、太平道の主。呪符が通常攻撃を弱め、当たれば縛られる。「天雷大陣」では竜巻・落雷・三人の分身、そして最後の「落」の一喝。",
+    "zh-Hans": "天公将军、太平道主。符咒护身削弱普攻，被符咒打中就定在原地；“天雷大阵”龙卷、落雷、三分身齐出，最后一声“落”，天雷劈下。"
+   },
+   "counter": {
+    "zh-Hant": "連續普攻打掉符咒；聽到咒語將盡，立刻離開原地。",
+    "en": "Keep slashing to strip the talismans. When the chant nears its end — run.",
+    "ja": "通常攻撃を続けて呪符を剥がせ。呪が終わりに近づいたら、すぐその場を離れよ。",
+    "zh-Hans": "连续普攻打掉符咒；听到咒语将尽，立刻离开原地。"
+   }
+  },
+  {
+   "id": "hei_hu_zang",
+   "hidden": true,
+   "scale": 1,
+   "name": {
+    "zh-Hant": "？？？",
+    "en": "???",
+    "ja": "？？？",
+    "zh-Hans": "？？？"
+   },
+   "moves": {
+    "zh-Hant": "？？？",
+    "en": "???",
+    "ja": "？？？",
+    "zh-Hans": "？？？"
+   },
+   "trait": {
+    "zh-Hant": "傳說平定張角之後，死鬥深處會有一位來自暗黑異界的強敵現身……",
+    "en": "They say that after Zhang Jiao falls, something from a dark otherworld waits deep in the Death Match…",
+    "ja": "張角を平らげた後、死闘の奥深くに暗黒の異界から強敵が現れるという……",
+    "zh-Hans": "传说平定张角之后，死斗深处会有一位来自暗黑异界的强敌现身……"
+   },
+   "counter": {
+    "zh-Hant": "親自去會會牠吧。",
+    "en": "Find out for yourself.",
+    "ja": "その目で確かめよ。",
+    "zh-Hans": "亲自去会会它吧。"
+   }
+  }
+ ],
+ "heroes": {
+  "guan_yu": [
+   {
+    "icon": "feilong",
+    "name": {
+     "zh-Hant": "飛龍在天",
+     "en": "Dragon Soaring in the Sky",
+     "ja": "飛龍在天",
+     "zh-Hans": "飞龙在天"
+    },
+    "d": {
+     "zh-Hant": "雲端龍首噴吐真火，化作隨你推進的火海。",
+     "en": "A dragon in the clouds breathes fire that spreads as you advance.",
+     "ja": "雲間の龍が真火を吐き、進むほどに火の海が広がる。",
+     "zh-Hans": "云端龙首喷吐真火，化作随你推进的火海。"
+    }
+   },
+   {
+    "icon": "kanglong",
+    "name": {
+     "zh-Hant": "亢龍有悔",
+     "en": "Overreaching Dragon",
+     "ja": "亢龍有悔",
+     "zh-Hans": "亢龙有悔"
+    },
+    "d": {
+     "zh-Hant": "連人帶刀旋風疾轉，把踏入刀圈的敵人甩飛。",
+     "en": "Spin like a whirlwind, flinging away anyone inside the blade's circle.",
+     "ja": "人刀一体で旋風のごとく回転し、刀の円に入った敵を弾き飛ばす。",
+     "zh-Hans": "连人带刀旋风疾转，把踏入刀圈的敌人甩飞。"
+    }
+   },
+   {
+    "icon": "jianlong",
+    "name": {
+     "zh-Hant": "見龍在野",
+     "en": "Dragon in the Field",
+     "ja": "見龍在野",
+     "zh-Hans": "见龙在野"
+    },
+    "d": {
+     "zh-Hant": "刀尖竄出數條青龍，朝四面八方衝散賊陣。",
+     "en": "Green dragons burst from the blade and scatter the ranks in all directions.",
+     "ja": "刀先から青龍が飛び出し、四方八方へ賊陣を蹴散らす。",
+     "zh-Hans": "刀尖窜出数条青龙，朝四面八方冲散贼阵。"
+    }
+   },
+   {
+    "icon": "weizhen",
+    "name": {
+     "zh-Hant": "威震華夏",
+     "en": "Might of the Central Plains",
+     "ja": "威震華夏",
+     "zh-Hans": "威震华夏"
+    },
+    "d": {
+     "zh-Hant": "重踏大地，金色振波一圈圈擴散，震得賊眾動彈不得。",
+     "en": "Stamp the earth — rings of golden shockwaves leave foes trembling in place.",
+     "ja": "大地を踏み鳴らし、金の振波が広がって賊を釘付けにする。",
+     "zh-Hans": "重踏大地，金色振波一圈圈扩散，震得贼众动弹不得。"
+    }
+   },
+   {
+    "icon": "shuiyan",
+    "name": {
+     "zh-Hant": "水淹七軍",
+     "en": "Flooding the Seven Armies",
+     "ja": "水淹七軍",
+     "zh-Hans": "水淹七军"
+    },
+    "d": {
+     "zh-Hant": "引水成道困住賊兵，再以萬丈白浪橫掃戰場。",
+     "en": "Channels of water bog down the enemy, then a towering wave sweeps the field.",
+     "ja": "水路で賊兵を足止めし、万丈の白波が戦場を押し流す。",
+     "zh-Hans": "引水成道困住贼兵，再以万丈白浪横扫战场。"
+    }
+   }
+  ],
+  "zhao_yun": [
+   {
+    "icon": "lihua",
+    "innate": true,
+    "name": {
+     "zh-Hant": "一槍入魂",
+     "en": "Spear of the Soul",
+     "ja": "一槍入魂",
+     "zh-Hans": "一枪入魂"
+    },
+    "d": {
+     "zh-Hant": "銀槍環射而出，把刺中的賊兵一路推撞到戰場盡頭。",
+     "en": "Silver spears fly out in a ring, skewering foes and ramming them to the edge of the field.",
+     "ja": "銀槍が環状に放たれ、貫いた賊兵を戦場の果てまで押し飛ばす。",
+     "zh-Hans": "银枪环射而出，把刺中的贼兵一路推撞到战场尽头。"
+    }
+   },
+   {
+    "icon": "qijin",
+    "name": {
+     "zh-Hant": "七進七出",
+     "en": "Seven In, Seven Out",
+     "ja": "七進七出",
+     "zh-Hans": "七进七出"
+    },
+    "d": {
+     "zh-Hant": "跨上白馬刀槍不入，在敵陣中自由馳騁。",
+     "en": "Mount a white steed and ride invulnerable through the enemy ranks.",
+     "ja": "白馬に跨り無敵となって、敵陣を縦横に駆ける。",
+     "zh-Hans": "跨上白马刀枪不入，在敌阵中自由驰骋。"
+    }
+   },
+   {
+    "icon": "fengming",
+    "name": {
+     "zh-Hant": "鳳鳴五斬",
+     "en": "Phoenix Cry, Five Cuts",
+     "ja": "鳳鳴五斬",
+     "zh-Hans": "凤鸣五斩"
+    },
+    "d": {
+     "zh-Hant": "一槍化出火鳳，最多五隻扇形破空，留下灼熱火痕。",
+     "en": "Up to five fire phoenixes streak out in a fan, leaving burning trails.",
+     "ja": "一突きで最大五羽の火の鳳凰が扇状に飛び、炎の跡を残す。",
+     "zh-Hans": "一枪化出火凤，最多五只扇形破空，留下灼热火痕。"
+    }
+   },
+   {
+    "icon": "manqiang",
+    "name": {
+     "zh-Hant": "滿腔熱血",
+     "en": "Burning Heart",
+     "ja": "満腔の熱血",
+     "zh-Hans": "满腔热血"
+    },
+    "d": {
+     "zh-Hant": "召來異界紫龍衛兵，端起大盆朝賊群潑出滔天白浪。",
+     "en": "Summon Purple Dragon guards who hurl tidal waves from their basins.",
+     "ja": "異界の紫龍衛兵を呼び、大盆から大波を浴びせる。",
+     "zh-Hans": "召来异界紫龙卫兵，端起大盆朝贼群泼出滔天白浪。"
+    }
+   },
+   {
+    "icon": "shenglong",
+    "name": {
+     "zh-Hant": "升龍霸",
+     "en": "Rising Dragon Strike",
+     "ja": "昇龍覇",
+     "zh-Hans": "升龙霸"
+    },
+    "d": {
+     "zh-Hant": "化身紫甲召喚者，一記升龍拳與擎天水柱轟飛四周。",
+     "en": "Become the Summoner and launch a rising uppercut amid towering water spouts.",
+     "ja": "紫甲の召喚者に変身し、昇龍拳と天を衝く水柱で周囲を吹き飛ばす。",
+     "zh-Hans": "化身紫甲召唤者，一记升龙拳与擎天水柱轰飞四周。"
+    }
+   },
+   {
+    "icon": "buwude",
+    "name": {
+     "zh-Hant": "不講武德",
+     "en": "Fighting Dirty",
+     "ja": "卑怯上等",
+     "zh-Hans": "不讲武德"
+    },
+    "d": {
+     "zh-Hant": "掏出異界神機玄鐵加特林，邊走邊掃射。",
+     "en": "Pull out an otherworldly gatling gun and fire on the move.",
+     "ja": "異界の神機・玄鉄ガトリングを取り出し、歩きながら掃射する。",
+     "zh-Hans": "掏出异界神机玄铁加特林，边走边扫射。"
+    }
+   }
+  ]
+ }
+}

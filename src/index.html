@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<!--#head:index-->
+</head>
+<body>
+<!--#header:index-->
+<main id="main">
+
+<section class="hero" aria-labelledby="title">
+  <div class="hero-bg"><img src="assets/img/key_art.webp" srcset="assets/img/key_art_s.webp 960w, assets/img/key_art.webp 1536w" sizes="100vw" alt="" fetchpriority="high"></div>
+  <div class="wrap">
+    <div class="kicker" data-i18n="hero.kicker"></div>
+    <h1 class="title" id="title"><span class="t1" data-i18n="game.name"></span><span class="t2" data-i18n="game.chapter"></span></h1>
+    <p class="tagline" data-i18n="hero.tagline"></p>
+    <div class="hero-cta">
+      <a class="btn btn-red" href="https://discord.gg/j6zhhXjq9u" data-discord rel="noopener" target="_blank">{{icon:discord}}<span data-i18n="btn.discord"></span></a>
+      <a class="btn btn-ghost" href="#platforms" data-i18n="btn.platforms"></a>
+    </div>
+    <div class="hero-meta"><b>US$4.99</b>　<span data-i18n="hero.meta"></span></div>
+  </div>
+</section>
+
+<div class="quote wrap"><p data-i18n="quote.text"></p><cite data-i18n="quote.src"></cite></div>
+
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow" data-i18n="feat.eyebrow"></div><h2 data-i18n="feat.title"></h2></div>
+    <div class="feats">
+      <div class="feat"><span class="no">壹</span><h3 data-i18n="feat.1.t"></h3><p data-i18n="feat.1.d"></p></div>
+      <div class="feat"><span class="no">貳</span><h3 data-i18n="feat.2.t"></h3><p data-i18n="feat.2.d"></p></div>
+      <div class="feat"><span class="no">參</span><h3 data-i18n="feat.3.t"></h3><p data-i18n="feat.3.d"></p></div>
+      <div class="feat"><span class="no">肆</span><h3 data-i18n="feat.4.t"></h3><p data-i18n="feat.4.d"></p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="heroes">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow" data-i18n="heroes.eyebrow"></div><h2 data-i18n="heroes.title"></h2></div>
+    <div class="heroes">
+      <article class="hcard gy">
+        <div class="hcard-top">
+          <div class="hstage">{{sprite:guan_yu:1}}</div>
+          <div><h3 class="hname" data-i18n="gy.name"></h3><div class="hep" data-i18n="gy.epithet"></div></div>
+        </div>
+        <p class="hdesc" data-i18n="gy.desc"></p>
+        <p class="sk-title" data-i18n="heroes.skills"></p>
+        <!--#skills:guan_yu-->
+      </article>
+      <article class="hcard zy">
+        <div class="hcard-top">
+          <div class="hstage">{{sprite:zhao_yun:1}}</div>
+          <div><h3 class="hname" data-i18n="zy.name"></h3><div class="hep" data-i18n="zy.epithet"></div></div>
+        </div>
+        <p class="hdesc" data-i18n="zy.desc"></p>
+        <p class="sk-title" data-i18n="heroes.skills"></p>
+        <!--#skills:zhao_yun-->
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="units">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow" data-i18n="units.eyebrow"></div><h2 data-i18n="units.title"></h2><p class="lead" data-i18n="units.lead"></p></div>
+    <h3 class="sub-head" data-i18n="units.mobs"></h3>
+    <!--#mobs-->
+    <p class="note" data-i18n="units.firenote"></p>
+    <h3 class="sub-head" style="margin-top:56px" data-i18n="units.bosses"></h3>
+    <!--#bosses-->
+    <p class="note" data-i18n="units.bossrule"></p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="camps">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow" data-i18n="camps.eyebrow"></div><h2 data-i18n="camps.title"></h2></div>
+    <div class="camps">
+      <div class="camp"><img src="assets/icons/camp_infantry.webp" width="72" height="72" alt="" loading="lazy"><div><h3 data-i18n="camp.inf"></h3><p data-i18n="camp.inf.d"></p></div></div>
+      <div class="camp"><img src="assets/icons/camp_cavalry.webp" width="72" height="72" alt="" loading="lazy"><div><h3 data-i18n="camp.cav"></h3><p data-i18n="camp.cav.d"></p></div></div>
+      <div class="camp"><img src="assets/icons/camp_archer.webp" width="72" height="72" alt="" loading="lazy"><div><h3 data-i18n="camp.arc"></h3><p data-i18n="camp.arc.d"></p></div></div>
+    </div>
+    <p class="note" data-i18n="camps.dove"></p>
+    <div class="treasures">
+      <div class="treasure"><div class="ticons">{{icons:hengsao,jinzhong}}</div><div><h3 data-i18n="tr.1.t"></h3><p data-i18n="tr.1.d"></p></div></div>
+      <div class="treasure"><div class="ticons">{{icons:qinggang,longdan,qinglong}}</div><div><h3 data-i18n="tr.2.t"></h3><p data-i18n="tr.2.d"></p></div></div>
+      <div class="treasure"><div class="ticons">{{icons:fangtian,yuxi,liannu,dilu}}</div><div><h3 data-i18n="tr.3.t"></h3><p data-i18n="tr.3.d"></p></div></div>
+      <div class="treasure"><div class="ticons">{{icons:chitu}}</div><div><h3 data-i18n="tr.4.t"></h3><p data-i18n="tr.4.d"></p></div></div>
+      <div class="treasure"><div class="ticons">{{icons:sunzi,xianglong}}</div><div><h3 data-i18n="tr.5.t"></h3><p data-i18n="tr.5.d"></p></div></div>
+      <div class="treasure"><div class="ticons">{{icons:temple}}</div><div><h3 data-i18n="tr.6.t"></h3><p data-i18n="tr.6.d"></p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow" data-i18n="gallery.eyebrow"></div><h2 data-i18n="gallery.title"></h2></div>
+    <div class="gallery">
+      {{shot:horde:big}}
+      {{shot:zhangjiao:}}
+      {{shot:endless:}}
+      {{shot:temple:third}}
+      {{shot:cards:third}}
+      {{shot:shop:third}}
+    </div>
+    <div class="video">
+      <h3 data-i18n="video.title"></h3>
+      <video controls preload="none" playsinline poster="assets/video/intro_poster.jpg" id="intro">
+        <source src="assets/video/intro.mp4" type="video/mp4">
+        <track kind="subtitles" srclang="zh-Hant" label="繁體中文" src="assets/video/intro.zh-Hant.vtt">
+        <track kind="subtitles" srclang="zh-Hans" label="简体中文" src="assets/video/intro.zh-Hans.vtt">
+        <track kind="subtitles" srclang="en" label="English" src="assets/video/intro.en.vtt">
+        <track kind="subtitles" srclang="ja" label="日本語" src="assets/video/intro.ja.vtt">
+      </video>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="community">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow" data-i18n="comm.eyebrow"></div><h2 data-i18n="comm.title"></h2></div>
+    <div class="community">
+      <div class="discord">
+        <h3>Discord</h3>
+        <p data-i18n="comm.desc"></p>
+        <a class="btn" href="https://discord.gg/j6zhhXjq9u" data-discord rel="noopener" target="_blank">{{icon:discord}}<span data-i18n="btn.discord"></span></a>
+        <span class="link">discord.gg/j6zhhXjq9u</span>
+      </div>
+      <div class="fb">
+        <h3 data-i18n="comm.fb.t"></h3>
+        <p data-i18n="comm.fb.d"></p>
+        <a class="btn btn-ghost" href="mailto:hanmosanguo@gmail.com" data-email><span data-i18n="btn.email"></span></a>
+        <a class="mail" href="mailto:hanmosanguo@gmail.com" data-email>hanmosanguo@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="platforms">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow" data-i18n="plat.eyebrow"></div><h2 data-i18n="plat.title"></h2></div>
+    <p class="price" data-i18n="plat.price"></p>
+    <div class="platforms">
+      <div class="plat" data-store="steam"><span class="pn">Steam</span><span class="pd" data-i18n="plat.steam"></span><span class="ps" data-i18n="plat.soon"></span></div>
+      <div class="plat" data-store="ios"><span class="pn">App Store</span><span class="pd" data-i18n="plat.ios"></span><span class="ps" data-i18n="plat.soon"></span></div>
+      <div class="plat" data-store="mac"><span class="pn">Mac App Store</span><span class="pd" data-i18n="plat.mac"></span><span class="ps" data-i18n="plat.soon"></span></div>
+      <div class="plat" data-store="gplay"><span class="pn">Google Play</span><span class="pd" data-i18n="plat.gplay"></span><span class="ps" data-i18n="plat.soon"></span></div>
+    </div>
+    <ul class="pfeats">
+      <li data-i18n="plat.f1"></li><li data-i18n="plat.f2"></li><li data-i18n="plat.f3"></li><li data-i18n="plat.f4"></li><li data-i18n="plat.f5"></li><li data-i18n="plat.f6"></li>
+    </ul>
+    <p style="text-align:center;margin-top:30px"><a class="btn btn-ghost" href="manual.html" data-i18n="btn.manual"></a></p>
+  </div>
+</section>
+
+</main>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true"><button type="button" data-close data-i18n-attr="aria-label:btn.close">×</button><img alt=""><p></p></div>
+<!--#footer-->
+</body>
+</html>
