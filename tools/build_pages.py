@@ -72,6 +72,22 @@ def sprite(sid, scale=1, extra=''):
   return (f'<div class="spr{extra}" aria-hidden="true" style="--w:{m["w"]};--h:{m["h"]};--n:{m["n"]};--s:{scale};'
           f'background-image:url(assets/sprites/{sid}.webp)"></div>')
 
+
+# 官方社群帳號（2026-11-19）。新增平台只要加一行。
+SOCIALS = [
+  ('YouTube', 'https://www.youtube.com/@hanmosanguo'),
+  ('X', 'https://x.com/hanmosanguo'),
+  ('Facebook', 'https://www.facebook.com/hanmosanguo'),
+  ('Instagram', 'https://www.instagram.com/hanmosanguo/'),
+  ('Threads', 'https://www.threads.com/@hanmosanguo'),
+  ('TikTok', 'https://www.tiktok.com/@hanmosanguo'),
+  ('Reddit', 'https://www.reddit.com/user/hanmosanguo/'),
+  ('巴哈姆特', 'https://home.gamer.com.tw/profile/index.php?owner=hanmosanguo'),
+]
+def socials(foot=False):
+  if foot: return ''.join(f'<li><a href="{u}" rel="noopener me" target="_blank">{n}</a></li>' for n, u in SOCIALS)
+  return ''.join(f'<li><a class="soc" href="{u}" rel="noopener me" target="_blank">{n}</a></li>' for n, u in SOCIALS)
+
 DISCORD_SVG = ('<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.3 4.4A19.6 19.6 0 0 0 15.4 3l-.6 1.3a18.2 18.2 0 0 0-5.6 0L8.6 3a19.5 19.5 0 0 0-4.9 1.5C.6 9.1-.3 13.6.1 18.1a19.8 19.8 0 0 0 6 3l1.3-2a12.7 12.7 0 0 1-2-1l.5-.4a14.1 14.1 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.7 19.7 0 0 0 6-3c.5-5.2-.9-9.7-3.6-13.7ZM8.3 15.3c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Zm7.4 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Z"/></svg>')
 
 def tags_html(m):
@@ -246,6 +262,7 @@ def render(pg):
   s = re.sub(r'\{\{sprite:(\w+):(\d+)\}\}', lambda m: sprite(m.group(1), int(m.group(2))), s)
   s = re.sub(r'\{\{icons:([\w,]+)\}\}', lambda m: icons(m.group(1)), s)
   s = s.replace('{{icon:discord}}', DISCORD_SVG)
+  s = s.replace('{{socials:foot}}', socials(True)).replace('{{socials}}', socials())
   s = re.sub(r'\{\{shot:(\w+):(\w*)\}\}', lambda m: shot(m.group(1), m.group(2)), s)
   s = re.sub(r'<(\w+)([^<>]*?)\sdata-i18n="([^"]+)"([^<>]*)></\1>',
              lambda m: f'<{m.group(1)}{m.group(2)} data-i18n="{m.group(3)}"{m.group(4)}>{T(m.group(3))}</{m.group(1)}>', s)

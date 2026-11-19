@@ -57,3 +57,8 @@ cd website && python3 -m http.server 8917 --bind 127.0.0.1
 ```
 
 瀏覽 http://127.0.0.1:8917/ 。截圖放 `_shots/`（不進 git）。
+
+## 上線（GitHub Pages，2026-11-16 起）
+- 網址：https://hanmosanguo.github.io/ （倉庫 `hanmosanguo/hanmosanguo.github.io`，公開，main 根目錄，已強制 HTTPS）。
+- 更新流程：在本 repo 改 `website/` 並 commit → `git archive HEAD website | tar -x -C <空資料夾> --strip-components=1` → 在那個資料夾覆蓋到 GitHub 倉庫的 clone、commit（作者用 `hanmosanguo@users.noreply.github.com`，不要用個人信箱）→ push。`gh` 要切到 `hanmosanguo` 帳號（`gh auth switch`）。
+- `_shots/` 不上傳；倉庫只放網站本身，**不要把遊戲專案其他檔案推上去**。

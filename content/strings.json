@@ -749,5 +749,11 @@
   "en": "Site",
   "ja": "サイト",
   "zh-Hans": "网站"
+ },
+ "comm.follow": {
+  "zh-Hant": "追蹤官方帳號",
+  "zh-Hans": "关注官方账号",
+  "en": "Follow us",
+  "ja": "公式アカウント"
  }
 }
