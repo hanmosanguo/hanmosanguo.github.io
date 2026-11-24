@@ -577,10 +577,10 @@
   "zh-Hans": "即将推出"
  },
  "plat.price": {
-  "zh-Hant": "售價 US$4.99・買斷制",
-  "en": "US$4.99 · one-time purchase",
-  "ja": "US$4.99・買い切り",
-  "zh-Hans": "售价 US$4.99・买断制"
+  "zh-Hant": "首發限時特價 NT$90（至 12/6，原價 NT$150）・買斷制",
+  "en": "Launch sale until Dec 6 · one-time purchase",
+  "ja": "12/6までリリース記念セール・買い切り",
+  "zh-Hans": "首发限时特价 NT$90（至 12/6，原价 NT$150）・买断制"
  },
  "plat.soon": {
   "zh-Hant": "即將推出",
@@ -589,10 +589,10 @@
   "zh-Hans": "即将推出"
  },
  "plat.get": {
-  "zh-Hant": "前往商店",
-  "en": "Get it",
-  "ja": "ストアへ",
-  "zh-Hans": "前往商店"
+  "zh-Hant": "立即下載",
+  "en": "Download",
+  "ja": "ダウンロード",
+  "zh-Hans": "立即下载"
  },
  "plat.steam": {
   "zh-Hant": "Windows・Mac",

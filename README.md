@@ -61,4 +61,5 @@ cd website && python3 -m http.server 8917 --bind 127.0.0.1
 ## 上線（GitHub Pages，2026-11-16 起）
 - 網址：https://hanmosanguo.github.io/ （倉庫 `hanmosanguo/hanmosanguo.github.io`，公開，main 根目錄，已強制 HTTPS）。
 - 更新流程：在本 repo 改 `website/` 並 commit → `git archive HEAD website | tar -x -C <空資料夾> --strip-components=1` → 在那個資料夾覆蓋到 GitHub 倉庫的 clone、commit（作者用 `hanmosanguo@users.noreply.github.com`，不要用個人信箱）→ push。`gh` 要切到 `hanmosanguo` 帳號（`gh auth switch`）。
+- **push 被拒 403（denied to sthwire）**：鑰匙圈存的是 sthwire 的憑證，`gh auth switch` 也沒用。push 改用 `git -c credential.helper= -c "credential.helper=!gh auth git-credential" push`（先 `gh auth switch -u hanmosanguo`，推完切回 sthwire）。
 - `_shots/` 不上傳；倉庫只放網站本身，**不要把遊戲專案其他檔案推上去**。
